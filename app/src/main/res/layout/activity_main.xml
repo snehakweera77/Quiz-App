@@ -52,22 +52,18 @@
                 android:textColor="#7A8089"
                 android:textSize="15sp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
+                android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                android:hint="Name"
+                android:textColor="#363A43"
+                android:textColorHint="#7A8089"
+                android:ems="10"
+                android:inputType="textPersonName" >
 
-                <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089"
-                    android:id="@+id/et_name"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
+                <requestFocus />
+            </EditText>
             <Button
                 android:id="@+id/btn_start"
                 android:layout_width="match_parent"
